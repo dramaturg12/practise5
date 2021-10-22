@@ -1,0 +1,6 @@
+n= int(input('Введите n: '))
+print('Введите список чисел: ')
+s=[int(i) for i in input().split()]
+for i in s:
+  if i>n:
+    print(i)
