@@ -1,0 +1,6 @@
+print('Введите ФИО:') 
+names= [str(name) for name in input().split()]
+n1=tuple(names[0])
+n2=tuple(names[1])
+n3=tuple(names[2])
+print('Инициалы: ',n1[0]+'.',n2[0]+'.',n3[0]+'.')
