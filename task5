@@ -1,0 +1,21 @@
+vowels=('а','у','е','ы','о','э','я','ё','и','ю')
+def vow(a):    #для гласных
+  count=0
+  for i in tuple(a):
+    if i in vowels:
+        count+=1
+  return count
+def cons(a):    #для согласных
+  count=0
+  for i in tuple(a):
+    if i not in vowels:
+        count+=1
+  return count
+print('Введите слово:')
+a=str(input())
+print("Если хотите узнать кол-во гласных, введите 1, если согласных - 2")
+ans=int(input())
+if ans==2:
+  print(cons(a))
+if ans==1: 
+  print(vow(a))
